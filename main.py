@@ -14,9 +14,6 @@ app = FastAPI()
 async def get_name(names: str):
     return {"message":names}
 
-# @app.get("/name/names/{age}")
-# async def get_age(age : int):
-#     return {"message": f"{age}"}
 
 from data import patients_dict
 @app.get("/patients")
