@@ -6,9 +6,6 @@ from models import PatientBaseModel
 from models import GenderEnum
 app = FastAPI()
 
-# @app.get("/")
-# async def read_root():
-#     return {"Hello": "World"}
 
 @app.get("/name/{name_of_lab}")
 async def get_name(names: str):
